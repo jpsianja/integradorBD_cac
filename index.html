@@ -1,0 +1,34 @@
+create database integradorBD_cac;<br>
+use integradorBD_cac;<br>
+create table oradores (<br>
+id_orador int auto_increment primary key,<br>
+nombre varchar(50) not null,<br>
+apellido varchar(50) not null,<br>
+mail varchar(50),<br>
+tema varchar(100) not null,<br>
+fecha_alta timestamp default current_timestamp<br>
+);<br>
+
+<br>
+
+insert into oradores (nombre,apellido,mail,tema) values<br>
+('Steve','Jobs','sjobs@gmail.com','javaScript react'),<br>
+('Bill','Gates','billgates@hotmail.com','javaScript react'),<br>
+('Ada','Lovelace','al@yahoo,com','negocios startup');<br>
+insert into oradores (nombre,apellido,mail,tema,fecha_alta) values<br>
+('Miguel','Nefle','miguel.nefle@bue.edu.ar','fullstack',20231109161420),<br>
+('Mariano','Rodriguez','mrodriguez1976@hotmail.com','lógica de programación',20231110110550),<br>
+('Florencia','Zurita','florzurita@gmail.com','la mujer y la programación',20231110071509),<br>
+('Carlos','Riquelme','ing.riquelme@gmail.com','base de datos',20231111102044);<br>
+insert into oradores (nombre,apellido,mail,tema) values<br>
+('Sofia','Arana','aranasofia@gmail.com','html y css'),<br>
+('Juan Ignacio','Castillo','jicastillo@hotmail.com','git y github'),<br> 
+('Luisina','De Paula','luisina_todocode@gmail.com','la programcación al alcance de todos');<br>
+<br>
+describe oradores;<br>
+select * from oradores;<br>
+
+<br>
+<a href="/imagenesBD/armado base de datos integrador.png" target="_blank" > <scan >armado de la base de datos</scan></a>
+<br>
+<a href="imagenesBD/base de datos con info.png" target="_blank"> <scan>base de datos con informacion cargada</scan></a>
